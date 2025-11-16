@@ -3,32 +3,31 @@ A privacy-conscious disease prediction framework leveraging federated learning a
 # Personalized and Privacy-Preserving Disease Prediction
 ## Leveraging AI-Driven Wearable Data Analytics
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
 
-A novel AI framework that enables real-time, personalized disease prediction using wearable sensor data while preserving user privacy through federated learning and differential privacy techniques[attached_file:1].
+A novel AI framework that enables real-time, personalized disease prediction using wearable sensor data while preserving user privacy through federated learning and differential privacy techniques
 
 ## Overview
 
-This project implements a **privacy-preserving disease prediction system** that analyzes data from wearable devices (smartwatches, fitness trackers, biosensors) to predict various health conditions including cardiovascular issues, sleep disorders, glucose abnormalities, respiratory problems, and hypertension[attached_file:1].
+This project implements a **privacy-preserving disease prediction system** that analyzes data from wearable devices (smartwatches, fitness trackers, biosensors) to predict various health conditions including cardiovascular issues, sleep disorders, glucose abnormalities, respiratory problems, and hypertension
 
 ### Key Features
 
-- **Privacy-First Architecture**: Implements federated learning to train models locally on user devices without transmitting raw health data[attached_file:1]
-- **Differential Privacy**: Adds calibrated noise to model updates to prevent reconstruction of individual user data[attached_file:1]
-- **Personalized Predictions**: Adapts to individual physiological patterns through transfer learning and continuous model updates[attached_file:1]
-- **High Accuracy**: Achieves 92.3% overall accuracy with minimal inference time (0.35 seconds per prediction)[attached_file:1]
-- **Multi-Disease Detection**: Predicts cardiovascular diseases, metabolic disorders, sleep disorders, respiratory issues, and hypertension[attached_file:1]
+- **Privacy-First Architecture**: Implements federated learning to train models locally on user devices without transmitting raw health data
+- **Differential Privacy**: Adds calibrated noise to model updates to prevent reconstruction of individual user data
+- **Personalized Predictions**: Adapts to individual physiological patterns through transfer learning and continuous model updates
+- **High Accuracy**: Achieves 92.3% overall accuracy with minimal inference time (0.35 seconds per prediction)
+- **Multi-Disease Detection**: Predicts cardiovascular diseases, metabolic disorders, sleep disorders, respiratory issues, and hypertension
 
 ## Architecture
 
 The system employs a hybrid AI architecture combining:
 
-- **Deep Learning Models**: CNNs and LSTM networks for temporal and spatial pattern extraction from sensor data[attached_file:1]
-- **Ensemble Methods**: Random Forests and Gradient Boosting Machines for robust predictions across diverse user profiles[attached_file:1]
-- **Federated Learning**: Decentralized training where only model parameters are shared, not raw data[attached_file:1]
-- **Differential Privacy**: Noise injection (ε=1.0) to ensure individual data points cannot be reverse-engineered[attached_file:1]
+- **Deep Learning Models**: CNNs and LSTM networks for temporal and spatial pattern extraction from sensor data
+- **Ensemble Methods**: Random Forests and Gradient Boosting Machines for robust predictions across diverse user profiles
+- **Federated Learning**: Decentralized training where only model parameters are shared, not raw data
+- **Differential Privacy**: Noise injection (ε=1.0) to ensure individual data points cannot be reverse-engineered
 
 ## Performance Metrics
 
@@ -41,7 +40,7 @@ The system employs a hybrid AI architecture combining:
 | Hypertension | 92.8% | 92.2% | 91.5% | 91.8% | 0.35s |
 | **Overall** | **92.3%** | **91.8%** | **90.7%** | **91.2%** | **0.35s** |
 
-*Tested on 500 users over 6 months*[attached_file:1]
+*Tested on 500 users over 6 months*
 
 ## Installation
 
@@ -109,7 +108,7 @@ risk_scores = predictor.get_risk_assessment(predictions)
 
 ## Data Collection
 
-The framework processes the following physiological indicators from wearable devices[attached_file:1]:
+The framework processes the following physiological indicators from wearable devices
 
 - Heart rate variability
 - Blood pressure
@@ -123,16 +122,16 @@ The framework processes the following physiological indicators from wearable dev
 
 ### Federated Learning Implementation
 
-- Models trained locally on user devices[attached_file:1]
-- Only gradient updates shared with central server[attached_file:1]
-- Raw health data never leaves user's device[attached_file:1]
+- Models trained locally on user devices
+- Only gradient updates shared with central server
+- Raw health data never leaves user's device
 
 ### Differential Privacy
 
-- Noise parameter ε = 1.0 ensures strong privacy guarantees[attached_file:1]
-- Individual data points cannot be reconstructed from shared parameters[attached_file:1]
-- Communication cost: 2.5 MB per training round[attached_file:1]
-- Model convergence: 30 rounds[attached_file:1]
+- Noise parameter ε = 1.0 ensures strong privacy guarantees
+- Individual data points cannot be reconstructed from shared parameters
+- Communication cost: 2.5 MB per training round
+- Model convergence: 30 rounds
 
 ## Project Structure
 
@@ -166,48 +165,48 @@ The framework processes the following physiological indicators from wearable dev
 
 ### Data Collection & Preprocessing
 
-1. Continuous monitoring via wearable sensors[attached_file:1]
-2. Noise removal and outlier detection[attached_file:1]
-3. Scale standardization across different sensor types[attached_file:1]
-4. Missing data imputation[attached_file:1]
+1. Continuous monitoring via wearable sensors
+2. Noise removal and outlier detection
+3. Scale standardization across different sensor types
+4. Missing data imputation
 
 ### Feature Engineering
 
-- Statistical features (mean, variance, skewness)[attached_file:1]
-- Frequency-domain transformations[attached_file:1]
-- Trend-based indicators[attached_file:1]
-- Time-series representations[attached_file:1]
+- Statistical features (mean, variance, skewness)
+- Frequency-domain transformations
+- Trend-based indicators
+- Time-series representations
 
 ### Model Training
 
-- Hybrid architecture: CNN-LSTM + Ensemble methods[attached_file:1]
-- Loss function optimization with regularization[attached_file:1]
-- Hyperparameter tuning via cross-validation[attached_file:1]
-- Transfer learning for personalization[attached_file:1]
+- Hybrid architecture: CNN-LSTM + Ensemble methods
+- Loss function optimization with regularization
+- Hyperparameter tuning via cross-validation
+- Transfer learning for personalization
 
 ## Results
 
-The framework was evaluated on 500 users over 6 months and demonstrated[attached_file:1]:
+The framework was evaluated on 500 users over 6 months and demonstrated
 
-- **High predictive accuracy** (92.3%) across multiple disease categories[attached_file:1]
-- **4-6% improvement** over non-personalized models for users with distinct physiological patterns[attached_file:1]
-- **Minimal performance degradation** (0.8%) compared to centralized models while maintaining privacy[attached_file:1]
-- **Fast inference** averaging 0.35 seconds per prediction[attached_file:1]
+- **High predictive accuracy** (92.3%) across multiple disease categories
+- **4-6% improvement** over non-personalized models for users with distinct physiological patterns
+- **Minimal performance degradation** (0.8%) compared to centralized models while maintaining privacy
+- **Fast inference** averaging 0.35 seconds per prediction
 
 ## Challenges & Limitations
 
-- **Device Heterogeneity**: Variability in data formats and sampling rates across wearable devices[attached_file:1]
-- **Computational Constraints**: Limited battery life and processing power for local model training[attached_file:1]
-- **Privacy-Accuracy Tradeoff**: Differential privacy noise may reduce sensitivity for rare conditions[attached_file:1]
-- **User Engagement**: Requires continuous sensor wear and accurate readings[attached_file:1]
+- **Device Heterogeneity**: Variability in data formats and sampling rates across wearable devices
+- **Computational Constraints**: Limited battery life and processing power for local model training
+- **Privacy-Accuracy Tradeoff**: Differential privacy noise may reduce sensitivity for rare conditions
+- **User Engagement**: Requires continuous sensor wear and accurate readings
 
 ## Future Work
 
-- Integration with Electronic Health Records (EHRs)[attached_file:1]
-- Expansion to predict rare and complex diseases[attached_file:1]
-- Optimization of differential privacy for improved accuracy[attached_file:1]
-- Reduction of computational costs on resource-constrained devices[attached_file:1]
-- Large-scale clinical validation studies[attached_file:1]
+- Integration with Electronic Health Records (EHRs)
+- Expansion to predict rare and complex diseases
+- Optimization of differential privacy for improved accuracy
+- Reduction of computational costs on resource-constrained devices
+- Large-scale clinical validation studies
 
 ## Contributing
 
@@ -215,8 +214,8 @@ We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for 
 
 ## Authors
 
-- **Vishal Kumar** - AIT-CSE (IoT), Chandigarh University, Mohali, India[attached_file:1]
-- **Priyanshu Pandey** - AIT-CSE (IoT), Chandigarh University, Mohali, India[attached_file:1]
+- **Vishal Kumar** - AIT-CSE (IoT), Chandigarh University, Mohali, India
+- **Priyanshu Pandey** - AIT-CSE (IoT), Chandigarh University, Mohali, India
 
 ## Citation
 
@@ -231,13 +230,9 @@ institution={Chandigarh University}
 
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
-- Research supported by Chandigarh University[attached_file:1]
+- Research supported by Chandigarh University
 - Special thanks to the wearable health monitoring community
 - Built upon recent advances in federated learning and differential privacy
 
@@ -245,8 +240,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or collaboration opportunities:
 
-- Vishal Kumar: vishal7889062265@gmail.com[attached_file:1]
-- Priyanshu Pandey: priyanshupandey27@hotmail.com[attached_file:1]
+- Vishal Kumar: vishal7889062265@gmail.com
+- Priyanshu Pandey: priyanshupandey27@hotmail.com
 
 ---
 
