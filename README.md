@@ -60,7 +60,6 @@ pip install -r requirements.txt
 Configure privacy parameters
 python config/setup_privacy.py
 
-text
 
 ## Usage
 
@@ -76,7 +75,6 @@ data = processor.load_data('path/to/sensor_data.csv')
 cleaned_data = processor.remove_noise(data)
 features = processor.extract_features(cleaned_data)
 
-text
 
 ### Federated Learning Training
 
@@ -94,7 +92,7 @@ Train model
 model = HybridDiseasePredictor()
 trainer.train(model, local_data)
 
-text
+
 
 ### Disease Prediction
 
@@ -107,7 +105,7 @@ Make predictions on new sensor data
 predictions = predictor.predict(sensor_readings)
 risk_scores = predictor.get_risk_assessment(predictions)
 
-text
+
 
 ## Data Collection
 
@@ -162,7 +160,7 @@ The framework processes the following physiological indicators from wearable dev
 │ └── hyperparameters.yaml
 └── requirements.txt
 
-text
+
 
 ## Methodology
 
@@ -231,7 +229,7 @@ year={2025},
 institution={Chandigarh University}
 }
 
-text
+
 
 ## License
 
